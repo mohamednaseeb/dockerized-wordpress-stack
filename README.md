@@ -1,21 +1,12 @@
 # Dockerized Multi-Tier WordPress Stack
 
-## Overview
+## Project Overview
 
-This project demonstrates a multi-container WordPress application using Docker Compose.
-
-Components:
-
-- Nginx
-- WordPress
-- MariaDB
-- phpMyAdmin
-- Docker Network
-- Docker Volumes
+A multi-container WordPress deployment using Docker Compose.
 
 ## Architecture
 
-Client
+Client Browser
 |
 v
 Nginx
@@ -31,7 +22,7 @@ phpMyAdmin
 v
 MariaDB
 
-## Technologies
+## Technologies Used
 
 - Docker
 - Docker Compose
@@ -45,6 +36,33 @@ MariaDB
 
 - Multi-container architecture
 - Persistent storage using Docker Volumes
-- Internal communication using Docker Networks
+- Internal service communication using Docker Networks
 - WordPress CMS deployment
-- Database administration via phpMyAdmin
+- Database management through phpMyAdmin
+
+## Containers
+
+| Container | Purpose |
+|------------|------------|
+| Nginx | Reverse proxy and web server |
+| WordPress | Application container |
+| MariaDB | Database server |
+| phpMyAdmin | Database administration |
+
+## Docker Concepts Demonstrated
+
+- Containerization
+- Docker Compose
+- Docker Networking
+- Docker Volumes
+- Service Discovery
+- Persistent Storage
+
+## Project Verification
+
+- All containers running
+- WordPress installation completed
+- MariaDB connected successfully
+- phpMyAdmin accessible
+- Docker network verified
+- Docker volumes verified
